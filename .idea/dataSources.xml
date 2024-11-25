@@ -15,7 +15,7 @@
       <jdbc-url>jdbc:postgresql://sigamingint.clmquhxxma0y.us-east-1.rds.amazonaws.com:5432/postgres</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="SI_Gaming_Testing" uuid="9d215911-bbcb-43ba-8a4a-4c631595b201">
+    <data-source source="LOCAL" name="SI_Gaming_Testing" read-only="true" uuid="9d215911-bbcb-43ba-8a4a-4c631595b201">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
