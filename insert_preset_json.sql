@@ -1,7 +1,12 @@
-create function demo.insert_preset_json_1(p_preset_json jsonb, p_chage_preset_id integer, p_new_preset_name text,
-                                          OUT p_changed_preset_json jsonb) returns jsonb
-    language plpgsql
-as
+CREATE FUNCTION demo.insert_preset_json(
+    p_preset_json jsonb,
+    p_chage_preset_id integer,
+    p_new_preset_name text,
+    OUT p_changed_preset_json jsonb
+)
+    RETURNS jsonb
+    LANGUAGE plpgsql
+AS
 $$
 DECLARE
     v_preset_list         JSONB;
